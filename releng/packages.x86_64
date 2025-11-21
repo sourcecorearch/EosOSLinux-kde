@@ -150,9 +150,9 @@ partimage
 partitionmanager
 pcsclite
 pipewire
-# pipewire-alsa
-# pipewire-jack
-# pipewire-pulse
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
 plasma-desktop
 plasma-integration
 plasma-keyboard
