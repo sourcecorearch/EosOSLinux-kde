@@ -230,6 +230,7 @@ xorg-xinit
 xorg-xinput
 xorg-xkill
 xorg-xrandr
+ttf-jetbrains-mono-nerd
 
 # --- chaotic-aur
 chaotic-mirrorlist
