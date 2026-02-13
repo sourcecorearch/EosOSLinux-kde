@@ -23,9 +23,8 @@ set -e -u
 #sed -i '/etc/mkinitcpio.conf' \
 #        -e "s/#COMPRESSION=\"zstd\"/COMPRESSION=\"zstd\"/g"
 
-
 ## Fix Initrd Generation in Installed System
-cat > "/etc/mkinitcpio.d/linux.preset" <<- _EOF_
+cat >"/etc/mkinitcpio.d/linux.preset" <<-_EOF_
 	# mkinitcpio preset file for the 'linux' package
 
 	ALL_kver="/boot/vmlinuz-linux"
@@ -44,3 +43,6 @@ _EOF_
 
 ## Delete ISO specific init files
 rm -f /etc/mkinitcpio.conf.d/archiso.conf
+
+cp -f /etc/skel-custom/.bashrc /etc/skel/.bashrc
+# cp -f /etc/skel-custom/.bash_profile /etc/skel/.bash_profile
